@@ -1,0 +1,44 @@
+/* Paleta SINOVA: azul marino #1A365D, grises #F7FAFC / #E2E8F0, rojo coral #E53E3E (solo errores) */
+:root { --azul: #1A365D; --gris: #F7FAFC; --borde: #E2E8F0; --rojo: #E53E3E; }
+
+body { background: var(--gris); color: var(--azul); font-family: Inter, Roboto, Arial, sans-serif; font-size: 14px; }
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.contenido { flex: 1; padding-top: 28px; padding-bottom: 28px; }
+
+.barra-sinova { background: var(--azul); }
+.marca { font-weight: 700; font-size: 22px; letter-spacing: 1px; }
+.marca small { font-size: 12px; font-weight: 400; opacity: .8; margin-left: 8px; letter-spacing: 0; }
+.barra-sinova .nav-link.active { border-bottom: 3px solid #fff; }
+
+.titulo-seccion { font-size: 24px; font-weight: 700; margin: 0; }
+.tarjeta { background: #fff; border: 1px solid var(--borde); border-radius: 6px; padding: 18px; }
+
+.campo { height: 40px; border-color: var(--borde); border-radius: 4px; }
+.campo:focus { border-color: var(--azul); box-shadow: 0 0 0 .15rem rgba(26, 54, 93, .2); }
+.form-control.is-invalid, .form-select.is-invalid { border-color: var(--rojo); }
+.invalid-feedback, .obligatorio { color: var(--rojo); }
+.form-label { font-weight: 600; margin-bottom: 4px; }
+
+.btn-sinova { background: var(--azul); color: #fff; border: 1px solid var(--azul); height: 40px; font-size: 16px; white-space: nowrap; }
+.btn-sinova:hover { background: #142a48; color: #fff; }
+.btn-sinova-sec { background: #fff; color: var(--azul); border: 1px solid var(--azul); height: 40px; font-size: 16px; white-space: nowrap; }
+.btn-peligro { background: var(--rojo); color: #fff; border: 1px solid var(--rojo); }
+.btn-peligro:hover { background: #c53030; color: #fff; }
+.btn-accion { border: 1px solid var(--borde); color: var(--azul); padding: 2px 8px; font-size: 13px; margin-right: 4px; }
+.btn-accion.eliminar { color: var(--rojo); }
+.btn-pagina { border: 1px solid var(--borde); background: #fff; color: var(--azul); padding: 4px 10px; }
+.btn-pagina.activa { background: var(--azul); color: #fff; }
+
+.tabla-sinova thead th { background: var(--azul); color: #fff; font-weight: 600; }
+.tabla-sinova tbody tr:nth-child(even) td { background: var(--gris); }
+.estado { background: var(--borde); border-radius: 10px; padding: 2px 8px; font-size: 12px; }
+
+.mensaje { background: #fff; border: 1px solid var(--borde); border-radius: 4px; padding: 10px 14px; margin-bottom: 14px; }
+.mensaje-ok { border-left: 5px solid var(--azul); }
+.mensaje-error { border-left: 5px solid var(--rojo); color: var(--rojo); }
+
+.modal-backdrop.show { background: var(--azul); opacity: .45; }
+.modal-header { border-bottom: 1px solid var(--borde); }
+dt { font-weight: 600; }
+
+.pie-sinova { background: var(--azul); color: #fff; text-align: center; padding: 14px; font-size: 13px; }
